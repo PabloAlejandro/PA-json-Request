@@ -10,6 +10,14 @@
 		5F64911D1CDFB6CD00AA9D8F /* PAJSONRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F64911C1CDFB6CD00AA9D8F /* PAJSONRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F6491241CDFB6CD00AA9D8F /* PAJSONRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6491191CDFB6CD00AA9D8F /* PAJSONRequest.framework */; };
 		5F6491291CDFB6CD00AA9D8F /* PAJSONRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491281CDFB6CD00AA9D8F /* PAJSONRequestTests.m */; };
+		5F64913A1CDFB76B00AA9D8F /* ServerRequestUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6491381CDFB76B00AA9D8F /* ServerRequestUtils.h */; };
+		5F64913B1CDFB76B00AA9D8F /* ServerRequestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491391CDFB76B00AA9D8F /* ServerRequestUtils.m */; };
+		5F64913E1CDFB77200AA9D8F /* NetworkFactoryRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F64913C1CDFB77200AA9D8F /* NetworkFactoryRequests.h */; };
+		5F64913F1CDFB77200AA9D8F /* NetworkFactoryRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F64913D1CDFB77200AA9D8F /* NetworkFactoryRequests.m */; };
+		5F64914C1CDFB8A100AA9D8F /* JSONRequestRetry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6491481CDFB8A100AA9D8F /* JSONRequestRetry.h */; };
+		5F64914D1CDFB8A100AA9D8F /* JSONRequestRetry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491491CDFB8A100AA9D8F /* JSONRequestRetry.m */; };
+		5F64914E1CDFB8A100AA9D8F /* JSONRequestsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F64914A1CDFB8A100AA9D8F /* JSONRequestsManager.h */; };
+		5F64914F1CDFB8A100AA9D8F /* JSONRequestsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F64914B1CDFB8A100AA9D8F /* JSONRequestsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		5F6491231CDFB6CD00AA9D8F /* PAJSONRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAJSONRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6491281CDFB6CD00AA9D8F /* PAJSONRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAJSONRequestTests.m; sourceTree = "<group>"; };
 		5F64912A1CDFB6CD00AA9D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6491381CDFB76B00AA9D8F /* ServerRequestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerRequestUtils.h; path = Utils/Network/ServerRequestUtils/ServerRequestUtils.h; sourceTree = "<group>"; };
+		5F6491391CDFB76B00AA9D8F /* ServerRequestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerRequestUtils.m; path = Utils/Network/ServerRequestUtils/ServerRequestUtils.m; sourceTree = "<group>"; };
+		5F64913C1CDFB77200AA9D8F /* NetworkFactoryRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkFactoryRequests.h; path = Utils/Network/NetworkFactoryRequests/NetworkFactoryRequests.h; sourceTree = "<group>"; };
+		5F64913D1CDFB77200AA9D8F /* NetworkFactoryRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkFactoryRequests.m; path = Utils/Network/NetworkFactoryRequests/NetworkFactoryRequests.m; sourceTree = "<group>"; };
+		5F6491481CDFB8A100AA9D8F /* JSONRequestRetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRequestRetry.h; sourceTree = "<group>"; };
+		5F6491491CDFB8A100AA9D8F /* JSONRequestRetry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestRetry.m; sourceTree = "<group>"; };
+		5F64914A1CDFB8A100AA9D8F /* JSONRequestsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRequestsManager.h; sourceTree = "<group>"; };
+		5F64914B1CDFB8A100AA9D8F /* JSONRequestsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 		5F64910F1CDFB6CD00AA9D8F = {
 			isa = PBXGroup;
 			children = (
+				5F6491331CDFB73600AA9D8F /* Utils */,
 				5F64911B1CDFB6CD00AA9D8F /* PAJSONRequest */,
 				5F6491271CDFB6CD00AA9D8F /* PAJSONRequestTests */,
 				5F64911A1CDFB6CD00AA9D8F /* Products */,
@@ -71,6 +88,10 @@
 		5F64911B1CDFB6CD00AA9D8F /* PAJSONRequest */ = {
 			isa = PBXGroup;
 			children = (
+				5F6491481CDFB8A100AA9D8F /* JSONRequestRetry.h */,
+				5F6491491CDFB8A100AA9D8F /* JSONRequestRetry.m */,
+				5F64914A1CDFB8A100AA9D8F /* JSONRequestsManager.h */,
+				5F64914B1CDFB8A100AA9D8F /* JSONRequestsManager.m */,
 				5F64911C1CDFB6CD00AA9D8F /* PAJSONRequest.h */,
 				5F64911E1CDFB6CD00AA9D8F /* Info.plist */,
 			);
@@ -86,6 +107,41 @@
 			path = PAJSONRequestTests;
 			sourceTree = "<group>";
 		};
+		5F6491331CDFB73600AA9D8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5F6491341CDFB75000AA9D8F /* Network */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5F6491341CDFB75000AA9D8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F6491371CDFB76400AA9D8F /* ServerRequestUtils */,
+				5F6491361CDFB75E00AA9D8F /* NetworkFactoryRequests */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5F6491361CDFB75E00AA9D8F /* NetworkFactoryRequests */ = {
+			isa = PBXGroup;
+			children = (
+				5F64913C1CDFB77200AA9D8F /* NetworkFactoryRequests.h */,
+				5F64913D1CDFB77200AA9D8F /* NetworkFactoryRequests.m */,
+			);
+			name = NetworkFactoryRequests;
+			sourceTree = "<group>";
+		};
+		5F6491371CDFB76400AA9D8F /* ServerRequestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5F6491381CDFB76B00AA9D8F /* ServerRequestUtils.h */,
+				5F6491391CDFB76B00AA9D8F /* ServerRequestUtils.m */,
+			);
+			name = ServerRequestUtils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +149,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F64913E1CDFB77200AA9D8F /* NetworkFactoryRequests.h in Headers */,
+				5F64914C1CDFB8A100AA9D8F /* JSONRequestRetry.h in Headers */,
 				5F64911D1CDFB6CD00AA9D8F /* PAJSONRequest.h in Headers */,
+				5F64914E1CDFB8A100AA9D8F /* JSONRequestsManager.h in Headers */,
+				5F64913A1CDFB76B00AA9D8F /* ServerRequestUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F64913B1CDFB76B00AA9D8F /* ServerRequestUtils.m in Sources */,
+				5F64914F1CDFB8A100AA9D8F /* JSONRequestsManager.m in Sources */,
+				5F64913F1CDFB77200AA9D8F /* NetworkFactoryRequests.m in Sources */,
+				5F64914D1CDFB8A100AA9D8F /* JSONRequestRetry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +440,7 @@
 				5F64912F1CDFB6CD00AA9D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F6491301CDFB6CD00AA9D8F /* Build configuration list for PBXNativeTarget "PAJSONRequestTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +449,7 @@
 				5F6491321CDFB6CD00AA9D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
